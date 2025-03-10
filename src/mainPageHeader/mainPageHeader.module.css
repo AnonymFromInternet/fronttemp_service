@@ -1,0 +1,61 @@
+.mainPageHeader {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error_icon {
+    width: 21px;
+    height: 19px;
+}
+
+.error_message {
+    padding: 0 24px;
+    width: 480px;
+    height: 56px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: #0f1318;
+
+    color: white;
+}
+
+.error {
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    max-width: 100%;
+}
+
+.error_message_button_group {
+    display: flex;
+    align-items: center;
+}
+
+.button_group {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    background-color: #eb0237;
+    width: 204px;
+    height: 56px;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-left: 12px;
+
+    cursor: pointer;
+}
+
+.refresh_icon {
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}

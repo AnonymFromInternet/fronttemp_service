@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+.montserrat-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.inter-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+}

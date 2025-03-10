@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+
+    cursor: pointer;
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    text-align: inherit;
+    box-shadow: none;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: inherit;
+    line-height: inherit;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
