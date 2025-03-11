@@ -1,8 +1,8 @@
 import styles from "./mainPageHeader.module.css";
-import fonts from "../assets/fonts/fonts.module.css";
+import fonts from "../../assets/fonts/fonts.module.css";
 
-import errorIconUrl from "../assets/images/error.svg";
-import refreshIconUrl from "../assets/images/refresh.svg";
+import errorIconUrl from "../../assets/images/error.svg";
+import refreshIconUrl from "../../assets/images/refresh.svg";
 
 interface MainPageHeaderProps {
   error: string | null;

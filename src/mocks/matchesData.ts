@@ -89,8 +89,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: yesterday.toISOString(),
     title: "ESL Pro League Season 15 - Final",
-    homeTeam: navi, // Левая команда - Navi
-    awayTeam: vitality, // Правая команда - Vitality
+    homeTeam: navi,
+    awayTeam: vitality,
     homeScore: 16,
     awayScore: 12,
     status: MatchStatus.Finished,
@@ -99,8 +99,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: yesterday.toISOString(),
     title: "ESL Pro League Season 15 - Semifinals",
-    homeTeam: g2, // Левая команда - G2
-    awayTeam: fnatic, // Правая команда - Fnatic
+    homeTeam: g2,
+    awayTeam: fnatic,
     homeScore: 14,
     awayScore: 16,
     status: MatchStatus.Finished,
@@ -109,8 +109,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: now.toISOString(),
     title: "BLAST Premier Spring Final 2023",
-    homeTeam: astralis, // Левая команда - Astralis
-    awayTeam: liquid, // Правая команда - Liquid
+    homeTeam: astralis,
+    awayTeam: liquid,
     homeScore: 12,
     awayScore: 12,
     status: MatchStatus.Ongoing,
@@ -119,8 +119,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: tomorrow.toISOString(),
     title: "IEM Cologne 2023 - Group Stage",
-    homeTeam: navi, // Левая команда - Navi
-    awayTeam: fnatic, // Правая команда - Fnatic
+    homeTeam: navi,
+    awayTeam: fnatic,
     homeScore: 0,
     awayScore: 0,
     status: MatchStatus.Scheduled,
@@ -129,8 +129,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: tomorrow.toISOString(),
     title: "IEM Cologne 2023 - Group Stage",
-    homeTeam: g2, // Левая команда - G2
-    awayTeam: liquid, // Правая команда - Liquid
+    homeTeam: g2,
+    awayTeam: liquid,
     homeScore: 0,
     awayScore: 0,
     status: MatchStatus.Scheduled,
@@ -139,8 +139,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: dayAfterTomorrow.toISOString(),
     title: "IEM Cologne 2023 - Playoffs",
-    homeTeam: astralis, // Левая команда - Astralis
-    awayTeam: vitality, // Правая команда - Vitality
+    homeTeam: astralis,
+    awayTeam: vitality,
     homeScore: 0,
     awayScore: 0,
     status: MatchStatus.Scheduled,
