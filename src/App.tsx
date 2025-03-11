@@ -15,7 +15,11 @@ function App() {
 
   return (
     <div className={styles["wrapper"]}>
-      <MainPageHeader error={error} isLoading={isLoading} />
+      <MainPageHeader
+        error={error}
+        isLoading={isLoading}
+        fetchMatches={fetchMockMatches}
+      />
       <Matches matches={matches} isLoading={isLoading} />
     </div>
   );

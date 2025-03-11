@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { MatchInterface } from "../../types/types";
 import { Match } from "../match/Match";
 
@@ -8,7 +9,7 @@ interface MatchesProps {
   isLoading: boolean;
 }
 
-export const Matches = ({ matches, isLoading }: MatchesProps) => {
+const MatchesComponent = ({ matches, isLoading }: MatchesProps) => {
   return (
     <div className={styles["matches_wrapper"]}>
       <div className={styles["matches_container"]}>
@@ -32,3 +33,5 @@ export const Matches = ({ matches, isLoading }: MatchesProps) => {
     </div>
   );
 };
+
+export const Matches = memo(MatchesComponent);

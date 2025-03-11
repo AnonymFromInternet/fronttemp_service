@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 import { MatchInterface, MatchStatus } from "../../types/types";
 
 import commandIcon from "../../assets/images/illustrations_role.svg";
@@ -15,7 +17,7 @@ interface MatchProps {
   match: MatchInterface;
 }
 
-export const Match = ({ match }: MatchProps) => {
+export const Match = memo(({ match }: MatchProps) => {
   const {
     id,
     homeTeam: { players, name, place, points },
@@ -103,4 +105,4 @@ export const Match = ({ match }: MatchProps) => {
       </div>
     </div>
   );
-};
+});

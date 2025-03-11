@@ -4,6 +4,7 @@ import styles from "./PlayersInfo.module.css";
 import fonts from "../../assets/fonts/fonts.module.css";
 
 import playerAvatar from "../../assets/images/player_avatar.svg";
+import { memo } from "react";
 
 interface PlayersInfoProps {
   players: Player[];
@@ -17,7 +18,7 @@ interface PlayersInfoProps {
   rightTeamTotalKills: number;
 }
 
-export const PlayersInfo = ({
+const PlayersInfoComponent = ({
   players,
   awayPlayers,
   leftTeamPoints,
@@ -109,3 +110,5 @@ const getPlayerInfo = (player: Player) => {
     </div>
   );
 };
+
+export const PlayersInfo = memo(PlayersInfoComponent);

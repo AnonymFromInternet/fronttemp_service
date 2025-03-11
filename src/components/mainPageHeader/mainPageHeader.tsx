@@ -3,15 +3,21 @@ import fonts from "../../assets/fonts/fonts.module.css";
 
 import errorIconUrl from "../../assets/images/error.svg";
 import refreshIconUrl from "../../assets/images/refresh.svg";
+import { memo } from "react";
 
 interface MainPageHeaderProps {
   error: string | null;
   isLoading: boolean;
+  fetchMatches: () => void;
 }
 
-export const MainPageHeader = ({ error, isLoading }: MainPageHeaderProps) => {
+const MainPageHeaderComponent = ({
+  error,
+  isLoading,
+  fetchMatches,
+}: MainPageHeaderProps) => {
   const onRefresh = () => {
-    console.log("Refreshing...");
+    fetchMatches();
   };
 
   return (
@@ -44,3 +50,5 @@ export const MainPageHeader = ({ error, isLoading }: MainPageHeaderProps) => {
     </div>
   );
 };
+
+export const MainPageHeader = memo(MainPageHeaderComponent);

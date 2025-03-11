@@ -52,11 +52,10 @@ src/
 
 ## Моковые данные
 Вместо них в проекте используются моковые данные.
-Для их замены на реальные данные, приходящие с API - в src/App.tsx заменить fetchMockMatches на fetchMatches при деструктуризации из useMatchesStore, а также в хуке useEffect.
+Для их замены на реальные данные, приходящие с API - в src/App.tsx заменить fetchMockMatches на fetchMatches при деструктуризации из useMatchesStore, в хуке useEffect, а также при передаче через props в компонент MainPageHeader
+
 В src/constants/constants.ts - поменять значение BASE_URL на рабочий эндпоинт.
 
 ## Лицензия
 
 MIT
-
-## TODO: Добавить инфо по поводу кривого урла. В сваггере он один, в ссылке он другой. В итоге ни тот ни другой не работает.
