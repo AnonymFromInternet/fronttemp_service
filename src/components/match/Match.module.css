@@ -1,40 +1,38 @@
-.players_info_wrapper {
-}
-
-.player_info {
-}
-
-.away_players {
-}
-
-.players {
-}
-
 .match {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: #0b0e12;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4px;
+    z-index: 0;
+}
+
+.match_main_content {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    border-radius: 4px;
     padding: 16px;
-    background-color: #0b0e12;
-
-    color: white;
+    position: relative;
 }
 
 .left_command {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 14px;
+    width: 40%;
 }
 
 .right_command {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 14px;
+    width: 40%;
+    justify-content: flex-end;
 }
 
 .status {
@@ -43,14 +41,57 @@
     justify-content: center;
     align-items: center;
     gap: 14px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
 }
 
 .down_icon {
-    cursor: pointer;
-
     transition: transform 0.3s ease;
+}
+
+.toggle_checkbox:checked + .match_main_content .toggle_label .down_icon {
+    transform: rotate(180deg);
 }
 
 .down_icon_rotated {
     transform: rotate(180deg);
+}
+
+.match_status {
+}
+
+.match.opened {
+    z-index: 2;
+}
+
+.toggle_checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.toggle_label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.players_info_wrapper {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.toggle_checkbox:checked ~ .players_info_wrapper {
+    max-height: 500px;
+    opacity: 1;
 }

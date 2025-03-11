@@ -24,8 +24,8 @@ export interface Team {
 }
 
 export enum MatchStatus {
-  Scheduled = "Scheduled",
-  Ongoing = "Ongoing",
+  Live = "Live",
+  Preparing = "Preparing",
   Finished = "Finished",
 }
 

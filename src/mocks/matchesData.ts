@@ -113,7 +113,7 @@ export const mockMatches: MatchInterface[] = [
     awayTeam: liquid,
     homeScore: 12,
     awayScore: 12,
-    status: MatchStatus.Ongoing,
+    status: MatchStatus.Preparing,
   },
   {
     id: uuidv4(),
@@ -123,7 +123,7 @@ export const mockMatches: MatchInterface[] = [
     awayTeam: fnatic,
     homeScore: 0,
     awayScore: 0,
-    status: MatchStatus.Scheduled,
+    status: MatchStatus.Live,
   },
   {
     id: uuidv4(),
@@ -133,7 +133,7 @@ export const mockMatches: MatchInterface[] = [
     awayTeam: liquid,
     homeScore: 0,
     awayScore: 0,
-    status: MatchStatus.Scheduled,
+    status: MatchStatus.Live,
   },
   {
     id: uuidv4(),
@@ -143,7 +143,7 @@ export const mockMatches: MatchInterface[] = [
     awayTeam: vitality,
     homeScore: 0,
     awayScore: 0,
-    status: MatchStatus.Scheduled,
+    status: MatchStatus.Live,
   },
 ];
 

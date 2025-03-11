@@ -1,0 +1,109 @@
+.players_info_wrapper {
+    padding: 16px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.players_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.players,
+.away_players {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.player_info {
+    padding: 8px;
+    height: 36px;
+    background-color: #151a21;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 180px;
+}
+
+.player_info p {
+    line-height: 1.2;
+}
+
+.players_info_wrapper.closing {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.players_info_wrapper.opening {
+    animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    to {
+        max-height: 500px;
+        opacity: 1;
+        padding: 16px;
+    }
+}
+
+.player_avatar {
+    width: 36px;
+    height: 36px;
+}
+
+.player_username {
+    margin-left: 8px;
+}
+
+.killed_statistic {
+    margin-left: 8px;
+}
+
+.command_statistic {
+    margin-top: 8px;
+    height: 52px;
+    border-radius: 4px;
+    background-color: #101318;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.command_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.points,
+.place,
+.total_kills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fafafa66;
+    font-size: 14px;
+}
+
+.value {
+    margin-left: 8px;
+    color: white;
+    font-size: 16px;
+}

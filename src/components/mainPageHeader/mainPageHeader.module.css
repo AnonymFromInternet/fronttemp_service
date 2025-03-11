@@ -41,7 +41,7 @@
 
 .button_group {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     align-items: center;
     background-color: #eb0237;
