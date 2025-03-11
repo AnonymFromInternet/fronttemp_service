@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./App.module.css";
 import { useMatchesStore } from "./store/store";
-import { MainPageHeader } from "./mainPageHeader/mainPageHeader";
+import { MainPageHeader } from "./components/mainPageHeader/mainPageHeader";
 import { Matches } from "./components/matches/Matches";
 
 function App() {
