@@ -1,8 +1,9 @@
-import { memo } from "react";
+import React, { memo } from "react";
 import { MatchInterface } from "../../types/types";
 import { Match } from "../match/Match";
 
 import styles from "./Matches.module.css";
+import { Loading } from "../Loading/Loading";
 
 interface MatchesProps {
   matches: MatchInterface[];
@@ -15,8 +16,7 @@ const MatchesComponent = ({ matches, isLoading }: MatchesProps) => {
       <div className={styles["matches_container"]}>
         {isLoading && (
           <div className={styles["loading_indicator"]}>
-            <p>Загрузка...</p>
-            {/* добавить спиннер или другую анимацию загрузки */}
+            <Loading />
           </div>
         )}
 

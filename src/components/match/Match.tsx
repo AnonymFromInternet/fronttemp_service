@@ -1,4 +1,4 @@
-import { memo } from "react";
+import React, { memo } from "react";
 
 import { MatchInterface, MatchStatus } from "../../types/types";
 
@@ -36,7 +36,6 @@ export const Match = memo(({ match }: MatchProps) => {
 
   return (
     <div key={id} className={styles["match"]}>
-      {/* Скрытый чекбокс для контроля состояния */}
       <input
         type="checkbox"
         id={`toggle-${id}`}
@@ -80,7 +79,6 @@ export const Match = memo(({ match }: MatchProps) => {
             width={48}
             height={48}
           />
-          {/* Используем label как триггер для чекбокса */}
           <label htmlFor={`toggle-${id}`} className={styles["toggle_label"]}>
             <img src={downIcon} className={styles["down_icon"]} alt="toggle" />
           </label>

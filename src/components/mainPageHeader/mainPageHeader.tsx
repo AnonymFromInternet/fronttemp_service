@@ -1,3 +1,5 @@
+import React from "react";
+
 import styles from "./mainPageHeader.module.css";
 import fonts from "../../assets/fonts/fonts.module.css";
 

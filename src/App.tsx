@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useEffect } from "react";
 import styles from "./App.module.css";
 import { useMatchesStore } from "./store/store";
