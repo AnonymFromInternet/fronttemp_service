@@ -11,6 +11,8 @@
 | ![Zustand](https://img.shields.io/badge/-Zustand-brown?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABR0lEQVQ4T62TMUsDQRCFZ+4gCFaS2j9gYRAUNKW9vUVSWNjZ2FtZ2NgLlhZWgljoH1BIYSOYUkxnERA0cHeSQLy7wPDezrKXmBwYWHbfzrz3zZoEf7z2H79nG892zcKdYFBikKK0wiM+NnbGr2meDcBNp7PpBsOTRDmKPgCslgAD5nPT7Y4EzZh/ALqRlVdofbKQJajpMNcMUgJgL75eyLmvwsTYDhRCCCLghHmQuQ5B20iBmY7ztVLXYWw18wYAb4q+Uzru+hnYEoCZd+POYGkCvVb7OJMO3eGZZxBFEV9w+F0CUJpxdDk7QDrAdlLmhoIQOqXvZ6CkdvQSA2WlroS0O8rwkbF2IqOvIuB249g5ZjqQ1pdpCSG8Z5BU1PtKLQ5Q3K1WZ3Npnf8awJa+r3JMZeF9n4FyLlzWoHyYgdA3qKxZvQHMC/k9UbHOJQAAAABJRU5ErkJggg==) | ^5.0.3
 | ![CSS Modules](https://img.shields.io/badge/-CSS%20Modules-000000?style=flat&logo=css3&logoColor=1572B6)
 | ![UUID](https://img.shields.io/badge/-UUID-338ee8?style=flat) | ^11.1.0
+| ![@testing-library/react](https://img.shields.io/badge/-@testing--library/react-E33332?style=flat&logo=testing-library&logoColor=white) | ^16.2.0
+| ![Jest](https://img.shields.io/badge/-Jest-C21325?style=flat&logo=jest&logoColor=white) | ^29.7.0
 
 ## Установка и запуск
 
