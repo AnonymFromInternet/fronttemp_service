@@ -1,0 +1,56 @@
+.players_info_wrapper {
+}
+
+.player_info {
+}
+
+.away_players {
+}
+
+.players {
+}
+
+.match {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: #0b0e12;
+
+    color: white;
+}
+
+.left_command {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.right_command {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.down_icon {
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.down_icon_rotated {
+    transform: rotate(180deg);
+}

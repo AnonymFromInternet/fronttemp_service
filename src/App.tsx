@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import styles from "./App.module.css";
 import { useMatchesStore } from "./store/store";
 import { MainPageHeader } from "./mainPageHeader/mainPageHeader";
+import { Matches } from "./components/matches/Matches";
 
 function App() {
   const { matches, fetchMockMatches, error, isLoading } = useMatchesStore(
@@ -12,14 +13,10 @@ function App() {
     fetchMockMatches();
   }, [fetchMockMatches]);
 
-  console.log("App component rendered");
-  console.log("matches :", matches);
-  console.log("");
-
   return (
     <div className={styles["wrapper"]}>
       <MainPageHeader error={error} isLoading={isLoading} />
-      {/* <Matches matches={matches} isLoading={isLoading} /> */}
+      <Matches matches={matches} isLoading={isLoading} />
     </div>
   );
 }

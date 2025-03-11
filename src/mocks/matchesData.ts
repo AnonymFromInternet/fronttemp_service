@@ -28,20 +28,20 @@ const naviPlayers: Player[] = [
   createPlayer("Boombl4", 9),
 ];
 
-const fnaticsPlayers: Player[] = [
-  createPlayer("KRIMZ", 16),
-  createPlayer("Brollan", 20),
-  createPlayer("mezii", 15),
-  createPlayer("ALEX", 12),
-  createPlayer("smooya", 19),
-];
-
 const g2Players: Player[] = [
   createPlayer("NiKo", 24),
   createPlayer("huNter", 18),
   createPlayer("JaCkz", 13),
   createPlayer("AmaNEk", 11),
   createPlayer("nexa", 15),
+];
+
+const astralisPlayers: Player[] = [
+  createPlayer("device", 22),
+  createPlayer("dupreeh", 19),
+  createPlayer("Magisk", 17),
+  createPlayer("Xyp9x", 13),
+  createPlayer("gla1ve", 11),
 ];
 
 const vitaPlayers: Player[] = [
@@ -52,12 +52,12 @@ const vitaPlayers: Player[] = [
   createPlayer("Kyojin", 10),
 ];
 
-const astralisPlayers: Player[] = [
-  createPlayer("device", 22),
-  createPlayer("dupreeh", 19),
-  createPlayer("Magisk", 17),
-  createPlayer("Xyp9x", 13),
-  createPlayer("gla1ve", 11),
+const fnaticsPlayers: Player[] = [
+  createPlayer("KRIMZ", 16),
+  createPlayer("Brollan", 20),
+  createPlayer("mezii", 15),
+  createPlayer("ALEX", 12),
+  createPlayer("smooya", 19),
 ];
 
 const liquidPlayers: Player[] = [
@@ -69,10 +69,11 @@ const liquidPlayers: Player[] = [
 ];
 
 const navi = createTeam("Natus Vincere", naviPlayers, 1);
-const fnatic = createTeam("Fnatic", fnaticsPlayers, 2);
 const g2 = createTeam("G2 Esports", g2Players, 3);
-const vitality = createTeam("Team Vitality", vitaPlayers, 4);
 const astralis = createTeam("Astralis", astralisPlayers, 5);
+
+const vitality = createTeam("Team Vitality", vitaPlayers, 2);
+const fnatic = createTeam("Fnatic", fnaticsPlayers, 4);
 const liquid = createTeam("Team Liquid", liquidPlayers, 6);
 
 const now = new Date();
@@ -88,8 +89,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: yesterday.toISOString(),
     title: "ESL Pro League Season 15 - Final",
-    homeTeam: navi,
-    awayTeam: vitality,
+    homeTeam: navi, // Левая команда - Navi
+    awayTeam: vitality, // Правая команда - Vitality
     homeScore: 16,
     awayScore: 12,
     status: MatchStatus.Finished,
@@ -98,8 +99,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: yesterday.toISOString(),
     title: "ESL Pro League Season 15 - Semifinals",
-    homeTeam: g2,
-    awayTeam: astralis,
+    homeTeam: g2, // Левая команда - G2
+    awayTeam: fnatic, // Правая команда - Fnatic
     homeScore: 14,
     awayScore: 16,
     status: MatchStatus.Finished,
@@ -108,8 +109,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: now.toISOString(),
     title: "BLAST Premier Spring Final 2023",
-    homeTeam: fnatic,
-    awayTeam: liquid,
+    homeTeam: astralis, // Левая команда - Astralis
+    awayTeam: liquid, // Правая команда - Liquid
     homeScore: 12,
     awayScore: 12,
     status: MatchStatus.Ongoing,
@@ -118,8 +119,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: tomorrow.toISOString(),
     title: "IEM Cologne 2023 - Group Stage",
-    homeTeam: navi,
-    awayTeam: g2,
+    homeTeam: navi, // Левая команда - Navi
+    awayTeam: fnatic, // Правая команда - Fnatic
     homeScore: 0,
     awayScore: 0,
     status: MatchStatus.Scheduled,
@@ -128,8 +129,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: tomorrow.toISOString(),
     title: "IEM Cologne 2023 - Group Stage",
-    homeTeam: astralis,
-    awayTeam: fnatic,
+    homeTeam: g2, // Левая команда - G2
+    awayTeam: liquid, // Правая команда - Liquid
     homeScore: 0,
     awayScore: 0,
     status: MatchStatus.Scheduled,
@@ -138,8 +139,8 @@ export const mockMatches: MatchInterface[] = [
     id: uuidv4(),
     time: dayAfterTomorrow.toISOString(),
     title: "IEM Cologne 2023 - Playoffs",
-    homeTeam: vitality,
-    awayTeam: liquid,
+    homeTeam: astralis, // Левая команда - Astralis
+    awayTeam: vitality, // Правая команда - Vitality
     homeScore: 0,
     awayScore: 0,
     status: MatchStatus.Scheduled,
